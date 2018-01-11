@@ -8,5 +8,9 @@ file(GLOB viso
     "src/*.h"
     "src/*.cpp"
 )
-add_executable( vo ${viso} )
+add_executable( vo src/visodo.cpp )
 target_link_libraries( vo ${OpenCV_LIBS} )
+
+
+add_executable( my_vo src/my_vo.cpp )
+target_link_libraries( my_vo ${OpenCV_LIBS} )
